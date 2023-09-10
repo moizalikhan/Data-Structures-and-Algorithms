@@ -1,4 +1,3 @@
-
 # Problem 1:
 # num_1, num_2 ,num_3 = input("Gave me 3 numbers: ").split(",")
 # average = (int(num_1)+int(num_2)+int(num_3))/3  
@@ -13,8 +12,8 @@
 # print(f"length of the character is {len(name)}")
 # print(f"Character Count is : {name.lower().count(character.lower())}")
 
-# import random
 # Problem 4:
+# import random
 # b = random.randint(0,9)
 # print(b)
 # a = int(input("give me a number:"))
@@ -25,4 +24,11 @@
 # else:
 #     print("too low")
 
+# Problem 5:
+# name = input("name:")
+# age = int(input("Age:"))
+# if name[0].lower() == "a" and age > 10:
+#     print("you can watch Coco Movie")
+# else:
+#     print("sorry, you cannot watch Coco")
 
