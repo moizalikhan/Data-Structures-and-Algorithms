@@ -129,9 +129,24 @@
 # x= input("Enter a number: ")
 # Fibonacci_series(x)
 
+
 # Problem 15:
-# 
-# 
-# 
-# 
-# 
+# def square_list(given_list):
+#   square_list1 = []
+#   for i in given_list:
+#     square_list1.append(int(i) * int(i))
+#   return square_list1
+
+# user_input_list= list(input("enter the list :").split(" "))
+# print(square_list(user_input_list))
+
+
+# Problem 16:
+def square_list(given_list):
+  square_list1 = []
+  for i in given_list:
+    square_list1.append(int(i) * int(i))
+  return square_list1
+
+user_input_list= list(input("enter the list :").split(" "))
+print(square_list(user_input_list))

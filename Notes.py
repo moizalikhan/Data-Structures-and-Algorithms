@@ -11,6 +11,7 @@
 # input()---string, int, float
 # variable order
 # print( ,end = " ") --on the same line with space
+# type() --for Data type
 
 
 # String Methods:
@@ -50,6 +51,21 @@
 # ["word1", "word2", "1"]--ordered collection of items
 # [i]-- for accessing members
 # .append()-- for adding data last to your list
-# 
-# 
-# 
+# .insert(position,data)-- for adding data to your desired position
+# .extend(old_list or data)-- for extending current list
+# .pop()--Delete last element, .pop(position)--delete data on a position
+# del list[i]-- delete the member 
+# .remove('')--element that we do not know the position but want to delete it.
+# if element in list --for checking element in the list
+# .count(), .sort(), sorted()--just for print in order, .clear(), .copy()
+# == --for Comparing 
+# is --for checking the list at the same location
+# .split() --it converts string to list
+# 'i'.join() --it converts list to string
+# list are mutable
+# for list[i] in list --looping through list
+# matrix [i][inside index] --2d Matrix
+# list(range(0,11)) -- makes a list for us
+# .index() --position of member
+# you can pass a list as a argument
+
