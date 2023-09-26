@@ -189,3 +189,6 @@ def Filter_same_elements(given_list_1, given_list_2):
 user_input_list_1= list(input("enter the list :").split(","))
 user_input_list_2= list(input("enter the list :").split(","))
 print(Filter_same_elements(user_input_list_1, user_input_list_2))
+
+
+# Problem 20:

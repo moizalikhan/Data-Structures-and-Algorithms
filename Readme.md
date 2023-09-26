@@ -76,3 +76,10 @@ string_name or variable_name:
 * .index() -position of member
 * you can pass a list as a argument
 * .min() and .max()-min and max functions in python
+
+### Tuples:
+---
+* ex = ('value1','value2') -- same as list but immutable, use for when data can't be changed, Tuples are faster 
+* .count(), .len(), .index(), slicing --[::]
+*
+  
