@@ -81,5 +81,5 @@ string_name or variable_name:
 ---
 * ex = ('value1','value2') -- same as list but immutable, use for when data can't be changed, Tuples are faster 
 * .count(), .len(), .index(), slicing --[::]
-*
+* 
   
