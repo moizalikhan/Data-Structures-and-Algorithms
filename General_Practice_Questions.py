@@ -218,3 +218,17 @@ sum_of_list = 0
 for i in digit_list:
     sum_of_list += int(i)
 print("Sum of numbers:", sum_of_list)
+
+# problem 18 sum of elements of a list:
+input_number = list(input("Enter an integer: "))
+odd_of_list = 0
+even_of_list = 0
+for i in input_number:
+    if int(i) % 2 == 0:
+        even_of_list +=1 
+    else:
+        odd_of_list +=1
+print(even_of_list)
+print(odd_of_list)
+
+# problem 18 sum of elements of a list:
