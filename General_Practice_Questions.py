@@ -242,3 +242,26 @@ for element in input_number:
 for element in element_count:
     count = element_count[element]
     print(f"{element}: {count}")
+
+# problem 19 reverse a list:
+input_number = list(input("Enter an integer: "))
+reverse_list = []
+index = len(input_number)-1
+while index >= 0:
+    reverse_list.append(input_number[index])
+    index -=1
+print(reverse_list)
+
+# problem 19 inserting at a list:
+input_list = list(input("Enter an integer: "))
+index_to_insert= int(input("index"))
+value_= input("value")
+index_1 = 0
+new_list = []
+while index_1 < len(input_list):
+    if index_1 == index_to_insert:
+        new_list.append(value_)
+    new_list.append(input_list[index_1])
+    index_1 +=1
+print(new_list)
+
