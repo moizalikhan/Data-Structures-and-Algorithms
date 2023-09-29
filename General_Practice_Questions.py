@@ -189,4 +189,32 @@ while i <=num_1:
 if count == 2:
     print(f"{num_1} is prime no")
 
-# problem 17 prime number:
+# problem 17 factorial of number:
+num_1 = int(input("Enter the number: "))
+i = 0
+factorial_ = 1
+while i<num_1:
+    digit_ = num_1 -i
+    factorial_ *= digit_
+    i +=1
+if num_1 == 0:
+    print(1)
+else:
+    print(factorial_)
+
+# problem 18 fibonacci series:
+num_1 = int(input("Enter the number"))
+a, b, c = 0,1,0
+while c <= num_1:
+    print(c)
+    a = b
+    b = c
+    c = a+b
+
+# problem 18 sum of elements of a list:
+input_number = input("Enter an integer: ")
+digit_list = list(input_number)
+sum_of_list = 0
+for i in digit_list:
+    sum_of_list += int(i)
+print("Sum of numbers:", sum_of_list)
