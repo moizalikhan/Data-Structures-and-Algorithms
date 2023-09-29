@@ -84,3 +84,35 @@ for i in range(len(num_1)):
     num_1 = int(num_1)// 10
 print(sum_1)
 
+# problem 10 Sum of square of digits of a given number:
+num_1 = list(input("enter the number: "))
+i = 0
+sum_1 =0
+for i in range(len(num_1)):
+    sum_1 += int(num_1[i])*int(num_1[i])
+print(sum_1)
+# OR
+# problem 9 Sum of digits of a given number:
+num_1 = input("enter the number: ")
+sum_1 =0
+for i in range(len(num_1)):
+    digit_1 = int(num_1) % 10
+    sum_1 = sum_1 +(digit_1*digit_1)
+    num_1 = int(num_1)// 10
+print(sum_1)
+
+# problem 11 a given number is armstrong or not:
+num_1 = int(input("enter the no for armstrong or not?"))
+original_no = num_1
+i = 0
+a = 0
+armstrong_check = 0
+while num_1>0:
+    digit_1 = num_1 % 10
+    cube_ofnum = digit_1**3
+    armstrong_check += cube_ofnum
+    num_1 = num_1//10
+if armstrong_check == original_no:
+    print("yes")
+else:
+    print("no")
