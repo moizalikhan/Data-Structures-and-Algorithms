@@ -67,4 +67,20 @@ while count < num_1:
     i += 1
 print(f"sum of the even numbers are: {sum_of_even}")
 
-# problem 9:
+# Level-2
+# problem 9 Sum of digits of a given number:
+num_1 = list(input("enter the number: "))
+i = 0
+sum_1 =0
+for i in range(len(num_1)):
+    sum_1 += int(num_1[i])
+print(sum_1)
+# OR
+# problem 9 Sum of digits of a given number:
+num_1 = input("enter the number: ")
+sum_1 =0
+for i in range(len(num_1)):
+    sum_1 = sum_1 +int(num_1) % 10
+    num_1 = int(num_1)// 10
+print(sum_1)
+
