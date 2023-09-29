@@ -264,4 +264,3 @@ while index_1 < len(input_list):
     new_list.append(input_list[index_1])
     index_1 +=1
 print(new_list)
-
