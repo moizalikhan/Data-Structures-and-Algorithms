@@ -252,7 +252,7 @@ while index >= 0:
     index -=1
 print(reverse_list)
 
-# problem 19 inserting at a list:
+# problem 20 inserting at a list:
 input_list = list(input("Enter an integer: "))
 index_to_insert= int(input("index"))
 value_= input("value")
