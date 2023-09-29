@@ -116,3 +116,40 @@ if armstrong_check == original_no:
     print("yes")
 else:
     print("no")
+
+# problem 12 a product of given num:
+num_1 = 123
+product = 1
+while num_1 > 0:
+    Digit_ = int(num_1) % 10
+    product = product * Digit_
+    num_1 = int(num_1) // 10
+print(product)
+
+# problem 13 sum of even and product of odd:
+num_1 =  int(input("enter the no "))
+sum_, prod_ = 0,1
+while num_1>0:
+    digit_ = num_1 % 10
+    if digit_ % 2 == 0:
+        sum_ += digit_
+    else:
+        prod_ *= digit_
+    num_1 = num_1 // 10
+print(f"sum : {sum_} and product: {prod_}")
+
+# problem 13 reverse a number:
+num_1 =  int(input("enter the no "))
+while num_1>0:
+    digit_ = num_1%10
+    print(digit_, end='')
+    num_1 = num_1//10
+
+# problem 14 reverse a string:
+string_1 =  input("enter the no ")
+index = len(string_1)-1
+reverse_ = ""
+while index>=0:
+    reverse_ += string_1[index]
+    index -=1
+print(reverse_)
