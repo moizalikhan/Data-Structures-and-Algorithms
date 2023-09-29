@@ -153,3 +153,40 @@ while index>=0:
     reverse_ += string_1[index]
     index -=1
 print(reverse_)
+
+# problem 15 palindrome a number:
+num_1 =  int(input("enter the no "))
+number_1=num_1
+rev = 0
+while num_1 > 0:
+    digit_ = num_1 %10
+    rev = rev*10 + digit_
+    num_1 = num_1//10
+if rev == number_1:
+    print("yes")
+else:
+    print("no")
+# OR 
+string_1 = "tenet"
+index = len(string_1) - 1
+reverse =""
+while index>=0:
+    reverse += string_1[index]
+    index -=1
+if reverse == string_1:
+    print("yes")
+else:
+    print("no")
+
+# problem 16 prime number:
+num_1 =  int(input("enter the no "))
+i = 1
+count = 0
+while i <=num_1:
+    if num_1%i==0:
+       count += 1
+    i +=1
+if count == 2:
+    print(f"{num_1} is prime no")
+
+# problem 17 prime number:
