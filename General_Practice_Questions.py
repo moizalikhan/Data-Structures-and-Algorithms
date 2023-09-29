@@ -231,4 +231,14 @@ for i in input_number:
 print(even_of_list)
 print(odd_of_list)
 
-# problem 18 sum of elements of a list:
+# problem 19 frequency of elements in a list:
+input_number = list(input("Enter an integer: "))
+element_count = {}
+for element in input_number:
+    if element in element_count:
+        element_count[element] +=1
+    else:
+        element_count[element] = 1
+for element in element_count:
+    count = element_count[element]
+    print(f"{element}: {count}")
