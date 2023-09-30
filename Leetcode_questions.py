@@ -39,4 +39,18 @@ class Solution:
     def alpnum(self, c):
         return (ord("A") <= ord(c) <=ord("Z")or
         (ord("a") <= ord(c) <=ord("z"))or 
-        (ord("0") <= ord(c) <=ord("9")))            
+        (ord("0") <= ord(c) <=ord("9")))
+
+# when to buy and sell a stock
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        l, r = 0,1
+        Maxprofit = 0
+        while r < len(prices):
+            if prices[l]<prices[r]:
+                profit = prices[r]-prices[l]
+                Maxprofit = max(profit,Maxprofit)
+            else:
+                l = r
+            r += 1
+        return Maxprofit
