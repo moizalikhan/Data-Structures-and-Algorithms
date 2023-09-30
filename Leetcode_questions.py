@@ -7,3 +7,14 @@ class Solution:
                 return True
             hashset.add(n)
         return False
+
+# sum of elemnts with target:
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        previousmap = {}
+
+        for i, n in enumerate(nums):
+            difference = target - n
+            if difference in previousmap:
+                return [previousmap[difference], i]
+            previousmap[n] = i
