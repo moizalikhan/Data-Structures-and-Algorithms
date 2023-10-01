@@ -12,7 +12,6 @@ class Solution:
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         previousmap = {}
-
         for i, n in enumerate(nums):
             difference = target - n
             if difference in previousmap:
@@ -23,7 +22,6 @@ class Solution:
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         l , r = 0, len(s)-1
-
         while l<r:
             while l < r and not self.alpnum(s[l]):
                 l = l+1                
@@ -31,11 +29,8 @@ class Solution:
                 r = r-1
             if s[l].lower() != s[r].lower():
                 return False
-            
             l , r = l+1, r-1
-        
         return True
-
     def alpnum(self, c):
         return (ord("A") <= ord(c) <=ord("Z")or
         (ord("a") <= ord(c) <=ord("z"))or 
@@ -95,3 +90,5 @@ while left_pointer <= right_pointer:
     left_pointer +=1
     right_pointer -=1
 print(arr)
+
+
