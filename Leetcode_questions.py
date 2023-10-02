@@ -129,3 +129,18 @@ class Solution:
                 result.append(n)
                 if len(result) == k:
                     return result
+
+# Problem 11:
+#  longest substring without repeating characters.
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        c_set = set()
+        l = 0
+        result = 0
+        for r in range(len(s)):
+            while s[r] in c_set:
+                c_set.remove(s[l])
+                l += 1
+            c_set.add(s[r])
+            result = max(result,r-l+1)
+        return result
