@@ -110,3 +110,22 @@ while l < len(arr) and r < len(arr):
         break
     l= l + 2
     r= r + 2
+
+# Problem 10:
+# Top K Frequent Elements
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        track = {}
+        bucket_sort = [[] for i in range(len(nums)+1)]
+        
+        for n in nums:
+            track[n] = 1+ track.get(n,0)
+        for n, count in track.items():
+            bucket_sort[count].append(n)
+
+        result = []
+        for i in range(len(bucket_sort)-1,0,-1):
+            for n in bucket_sort[i]:
+                result.append(n)
+                if len(result) == k:
+                    return result
