@@ -58,10 +58,3 @@ while index >= 0:
     reversed_string += string[index]
     index -= 1
 print(reversed_string)
-
-# # problem 5 2d array:
-wealth= [
-    [1,2,2],
-    [1,2,4],
-    [1,2,5]
-]
