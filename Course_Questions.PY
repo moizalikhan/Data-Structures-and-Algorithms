@@ -1,4 +1,5 @@
 # # problem 1:
+# Minimum Number
 number= list((input("enter")))
 target = 3
 i = 0
@@ -10,6 +11,7 @@ for i in range(len(number)-1):
 print(minimum)
 
 # # problem 2:
+# Minimum Number in 2d array
 number= [
     [2,8,3],
     [3,4,5],
@@ -23,6 +25,7 @@ for i in number:
 print(minimum)
 
 # # problem 3:
+# Count even number of digits
 number= [1,22,333,4444,55555,666666]
 count_ofintegers = 0
 for i in number:
@@ -43,6 +46,7 @@ for i in strings:
 print(count_ofintegers)
 
 # # problem 4:
+# Reverse of a number
 number = 123456789
 reversed_number = 0
 while number > 0:
