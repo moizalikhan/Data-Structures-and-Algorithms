@@ -21,17 +21,3 @@ class LinkedList:
             print(current.data, end=" -> ")
             current = current.next
         print("None")
-
-# # Example usage:
-# my_linked_list = LinkedList()
-# my_linked_list.append(1)
-# my_linked_list.append(2)
-# my_linked_list.append(3)
-# print("Original Linked List:")
-# my_linked_list.display()
-
-# my_linked_list.reverse()
-# print("Reversed Linked List:")
-# my_linked_list.display()
-
-# Reverse Linked List
