@@ -6,7 +6,7 @@
 * name, mv filename  ./relativepath, mv filename .. 
 * cp Copy folderpath
 
-
+# Python:
 ### Escape squence:
 ---
 * \",\n \t "\\" "\\\\"
