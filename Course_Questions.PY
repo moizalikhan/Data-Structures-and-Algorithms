@@ -91,6 +91,7 @@ sum_1 =0
 for i in range(len(num_1)):
     sum_1 += int(num_1[i])
 print(sum_1)
+
 # OR
 # problem 9 Sum of digits of a given number:
 num_1 = input("enter the number: ")
