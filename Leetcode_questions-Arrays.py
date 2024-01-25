@@ -146,7 +146,7 @@ class Solution:
         return result
 
 # Problem 13:
-# leetcode 242
+# leetcode 242 Anagram
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
