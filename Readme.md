@@ -86,4 +86,3 @@ string_name or variable_name:
 ### Dictionaries:
 * unordered collections of data in key:value pair
 * {key: value}
-  
