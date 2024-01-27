@@ -81,8 +81,27 @@ string_name or variable_name:
 ---
 * ex = ('value1','value2') -- same as list but immutable, use for when data can't be changed, Tuples are faster 
 * .count(), .len(), .index(), slicing --[::]
-* 
+* num('First_Element',)--->type(num)--> Type Tuple
+* Tuple Unpacking, min(), max()
+* Whenever Function can return 2 values then it is tuple
+* Tuple can be converted to string and insert,append,pop,remove
+* On tuple only count and index
+* Tuple is Fast than List
 
 ### Dictionaries:
 * unordered collections of data in key:value pair
-* {key: value}
+* {'key': 'value'} or dict(key='value')
+* Dictnories doesn't have index because of unordered pair
+* for accessing data ---> dictname['key']
+* Control statements with 'in' keyword
+* .values() method, .keys=() method, .items() methods --> return tuples
+* for i in dictonary_name:
+  * print(Dictonary_name[i])
+  * the above code prints the value of the keys
+* tuple unpacking in dictonary
+* .pop(), .popitem()---> removes any random key
+* .update(passingDictname)
+* .fromkeys("abc","unknown")---> Different keys
+* .get("key")--> if not present none
+* d1 = d ---> much better to use .copy()
+* 
