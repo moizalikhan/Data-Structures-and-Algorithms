@@ -547,3 +547,24 @@ def Filter_same_elements(given_list_1, given_list_2):
 user_input_list_1= list(input("enter the list :").split(","))
 user_input_list_2= list(input("enter the list :").split(","))
 print(Filter_same_elements(user_input_list_1, user_input_list_2))
+
+
+# Problem 20:
+def cubeFinder(num):
+    i, CubeDic = 1,{}
+    while i <= num:
+        CubeDic[i] = i**3
+        i+=1
+    print(CubeDic)
+User_num = int(input("Enter the Number: "))
+cubeFinder(User_num)
+
+
+# Word Counter:
+def CharCount(s):
+    CounterofChar = {}
+    for c in s:
+        CounterofChar[c] = s.count(c)
+    return CounterofChar
+String_1 = input("Enter: ")
+print(CharCount(String_1))

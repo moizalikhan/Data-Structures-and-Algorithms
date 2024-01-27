@@ -102,6 +102,6 @@ string_name or variable_name:
 * .pop(), .popitem()---> removes any random key
 * .update(passingDictname)
 * .fromkeys("abc","unknown")---> Different keys
-* .get("key")--> if not present none
+* .get("key", "default")--> if not present none
 * d1 = d ---> much better to use .copy()
 * 
