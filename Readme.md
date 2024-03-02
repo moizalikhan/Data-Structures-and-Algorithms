@@ -104,4 +104,26 @@ string_name or variable_name:
 * .fromkeys("abc","unknown")---> Different keys
 * .get("key", "default")--> if not present none
 * d1 = d ---> much better to use .copy()
+
+### Sets:
+* s = {}
+* Unordered collection of unique items
+* you cannot store lists and Dictionaries in set
+* .add(), .remove(), .discard(), .copy()
+* No indexing
+* union'|' and intersection '&'
+
+### List Comprehension ---> Pythonic way:
+* names_List = [i[0] for i in names]
+* even_num = [i for i in range(1,11) if i%2 == 0] 
+* number_list_as_String = [str(i) for i in list1 if isinstance(i, (float, int))] ---> for if Statement
+* even_or_odd_num = [i if i%2 == 0 else -i for i in range(1,11)] ---> for if and else Statement
+* nested_list_comprehension = [[i for i in range(1,11)] for j in range(3)]
+
+### Dictionary Comprehension---> Pythonic way:
+* word_count = {char:string.count(char) for char in string}
+* odd_even = {i:("even" if i%2 == 0 else 'odd') for i in range(1,11)}
+* set_1 = {k**2 for k in range(1,11)}
+
+### Flexible Functions OR *args ---> Pythonic way:
 * 
